@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include <conio.h>
+main ()
+{
+ int x,y,i,k=10;
+char a[9][10]={"one","two","three","four","five","six","seven","eight","nine"};
+scanf("%d%d",&x,&y);
+//if(y<=9)
+for(i=x;i!=y+1;i++)
+{
+ printf("%s",a[x-1]);
+ x++;
+}
+
+
+if(y>9)
+{
+ while(k!=y+1)
+{
+
+ if (k%2==0)
+ {
+   printf("even\n");
+ }
+
+  {
+   if(k%2!=0)
+  printf("odd\n");
+  }
+ k++;
+}
+
+}
+
+}
