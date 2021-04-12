@@ -1,35 +1,52 @@
 #include<stdio.h>
 #include <conio.h>
-main ()
+int main()
 {
- int x,y,i,k=10;
+ int x,y,i,k,s;
 char a[9][10]={"one","two","three","four","five","six","seven","eight","nine"};
 scanf("%d%d",&x,&y);
-//if(y<=9)
+
+if(x<10&&y<10)
 for(i=x;i!=y+1;i++)
 {
- printf("%s",a[x-1]);
- x++;
+ printf("%s\n",a[i-1]);
+
 }
 
+if(x<10&&y>9)
+        {
+     {
+       for(i=x;i!=10;i++)
+       printf("%s\n",a[i-1]);
 
-if(y>9)
+           }
+     k=10;
+    while(k!=y+1)
+   {
+
+                         if (k%2==0)
+                      printf("even\n");
+                      else
+                     printf("odd\n");
+                   k++;
+   }
+         }
+
+if(x>9&&y>9)
 {
- while(k!=y+1)
+ s=x;
+ while(s!=y+1)
 {
 
- if (k%2==0)
- {
+ if (s%2==0)
    printf("even\n");
- }
-
-  {
-   if(k%2!=0)
+//   if(k%2!=0)
+else
   printf("odd\n");
-  }
- k++;
+ s++;
+}
+}
 }
 
-}
 
-}
+
