@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+#include <string.h>
+
+int main()
+ {
+
+int n,k[5],i,s=0,r=10000;
+scanf("%d",&n);
+for(i=0;i<=4;i++)
+{
+ k[i]=n/r%10;
+ r=r/10;
+}
+
+for(i=0;i<=4;i++)
+s=s+k[i];
+printf("%d",s);
+
+
+}
