@@ -1,0 +1,42 @@
+#include<stdio.h>
+void fun1(int);
+void fun2(int);
+void main()
+{
+    int num;
+
+    scanf("%d", &num);
+
+    if (num>0 && num<10)
+    fun1(num);
+
+    else
+    fun2(num);
+
+    return 0;
+}
+void fun1(int a)
+{
+ if(a==1)
+  printf("one");
+ else if (a==2)
+    printf("two");
+ else if(a==3)
+  printf("three");
+ else if(a==4)
+  printf("four");
+ else if(a==5)
+  printf("five");
+ else if (a==6)
+ printf("six");
+ else if (a==7)
+ printf("seven");
+ else if(a==8)
+ printf("eight");
+   else if (a==9)
+   printf("nine");
+}
+void fun2(int num)
+{
+    printf("Number is greater than 9\n");
+}
